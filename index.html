@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in to your RBS Tracker trainer, student, or admin portal."
+    />
+    <title>RBS Tracker | Learning, in sync</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="RBS Tracker home" data-home-link>
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>rbs<span class="brand-light">tracker</span></span>
+        </a>
+        <span class="topbar-note"><span class="status-dot"></span> Your learning hub</span>
+      </header>
+
+      <section class="view home-view" id="home-view" aria-labelledby="home-title">
+        <div class="intro">
+          <div class="intro-copy-block">
+            <p class="eyebrow"><span class="eyebrow-line"></span> CODE. CREATE. CONNECT.</p>
+            <h1 id="home-title">Build what’s<br /><span>next.</span></h1>
+            <p class="intro-copy">
+              Your coding and robotics journey, progress, and people — all in
+              sync. Choose your portal to get started.
+            </p>
+          </div>
+            <div class="robot-stage" aria-hidden="true">
+              <div class="robot-turner">
+                <img class="robot-face robot-front" src="robot-coder.svg" alt="" />
+                <img class="robot-face robot-back" src="robot-coder-back.svg" alt="" />
+              </div>
+            </div>
+        </div>
+
+        <div class="portal-grid" aria-label="Choose your portal">
+          <button class="portal-card trainer-card" type="button" data-role="trainer">
+            <span class="card-top">
+              <span class="role-icon trainer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+                  <path d="M8 7h8M8 11h6" />
+                </svg>
+              </span>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </span>
+            <span class="card-content">
+              <span class="card-label">FOR TRAINERS</span>
+              <span class="card-title">Trainer portal</span>
+              <span class="card-description">Manage sessions and guide progress.</span>
+            </span>
+            <span class="card-action">Continue as trainer <span aria-hidden="true">→</span></span>
+          </button>
+
+          <button class="portal-card student-card" type="button" data-role="student">
+            <span class="card-top">
+              <span class="role-icon student-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="m3 9 9-5 9 5-9 5-9-5Z" />
+                  <path d="M7 11.2V16c2.8 2.4 7.2 2.4 10 0v-4.8M21 9v6" />
+                </svg>
+              </span>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </span>
+            <span class="card-content">
+              <span class="card-label">FOR STUDENTS</span>
+              <span class="card-title">Student portal</span>
+              <span class="card-description">Track your learning and next steps.</span>
+            </span>
+            <span class="card-action">Continue as student <span aria-hidden="true">→</span></span>
+          </button>
+
+          <button class="portal-card admin-card" type="button" data-role="admin">
+            <span class="card-top">
+              <span class="role-icon admin-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3 19 6v5c0 4.7-3 8.3-7 10-4-1.7-7-5.3-7-10V6l7-3Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </span>
+            <span class="card-content">
+              <span class="card-label">FOR ADMINISTRATORS</span>
+              <span class="card-title">Admin portal</span>
+              <span class="card-description">Oversee people, programs, and activity.</span>
+            </span>
+            <span class="card-action">Continue as admin <span aria-hidden="true">→</span></span>
+          </button>
+        </div>
+
+        <footer class="home-footer">
+          <span>BUILT FOR BETTER LEARNING</span>
+          <span>Secure access for every role <span class="footer-lock" aria-hidden="true">⌑</span></span>
+        </footer>
+      </section>
+
+      <section class="view login-view" id="login-view" aria-labelledby="login-title" hidden>
+        <div class="login-panel">
+          <button class="back-button" type="button" data-back>
+            <span aria-hidden="true">←</span> All portals
+          </button>
+          <div class="login-heading">
+            <span class="role-icon login-icon" id="login-icon" aria-hidden="true"></span>
+            <p class="eyebrow" id="login-eyebrow">PORTAL SIGN IN</p>
+            <h1 id="login-title">Welcome back.</h1>
+            <p class="login-copy" id="login-copy">Sign in to continue to your portal.</p>
+          </div>
+          <form id="login-form">
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="username"
+              placeholder="you@example.com"
+              required
+            />
+            <div class="password-label">
+              <label for="password">Password</label>
+            </div>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="Enter your password"
+              required
+            />
+            <button class="submit-button" type="submit">
+              <span id="submit-label">Sign in</span><span aria-hidden="true">→</span>
+            </button>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          </form>
+          <p class="login-footnote">Need help signing in? Contact your RBS Tracker administrator.</p>
+        </div>
+        <aside class="login-aside" aria-label="RBS Tracker information">
+          <div class="aside-orbit orbit-one"></div>
+          <div class="aside-orbit orbit-two"></div>
+          <div class="aside-content">
+            <span class="aside-kicker">RBS TRACKER</span>
+            <p class="aside-quote">“Small steps.<br />Real progress.”</p>
+            <span class="aside-caption">A clearer path for every learner.</span>
+          </div>
+          <span class="aside-index">01 — 03</span>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

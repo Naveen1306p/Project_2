@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="screen" x1="120" y1="70" x2="1500" y2="880" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A22"/>
+      <stop offset=".52" stop-color="#15242A"/>
+      <stop offset="1" stop-color="#0B141B"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="1200" y1="150" x2="460" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#54C79B" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#54C79B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="code" x1="420" y1="250" x2="1430" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FD6B0"/>
+      <stop offset=".48" stop-color="#78C7E6"/>
+      <stop offset="1" stop-color="#C3D98C"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#A8D9C1" stroke-opacity=".055"/>
+    </pattern>
+    <pattern id="lines" width="1" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0H1600" stroke="#D8F4E7" stroke-opacity=".018"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#screen)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect width="1600" height="900" fill="url(#lines)"/>
+  <ellipse cx="1120" cy="480" rx="520" ry="410" fill="#35B989" fill-opacity=".12" filter="url(#soft)"/>
+  <g transform="translate(175 75) rotate(-5 800 430)">
+    <rect x="215" y="106" width="1380" height="715" rx="22" fill="#0B1118" fill-opacity=".64" stroke="#B6D7C8" stroke-opacity=".22" stroke-width="2"/>
+    <path d="M237 107H1573C1585.15 107 1595 116.85 1595 129V177H215V129C215 116.85 224.85 107 237 107Z" fill="#19262E" fill-opacity=".95"/>
+    <circle cx="248" cy="143" r="7" fill="#FF8A78" fill-opacity=".8"/>
+    <circle cx="274" cy="143" r="7" fill="#E8C06E" fill-opacity=".8"/>
+    <circle cx="300" cy="143" r="7" fill="#75C995" fill-opacity=".8"/>
+    <rect x="348" y="130" width="270" height="26" rx="7" fill="#26353A"/>
+    <text x="365" y="148" fill="#A8C2B3" font-family="Consolas, monospace" font-size="13">robotics / control.ts</text>
+    <path d="M315 178V821" stroke="#C9E0D3" stroke-opacity=".12" stroke-width="2"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="29" font-weight="500">
+      <g fill="#76918B" fill-opacity=".7" text-anchor="end">
+        <text x="290" y="242">18</text><text x="290" y="292">19</text><text x="290" y="342">20</text>
+        <text x="290" y="392">21</text><text x="290" y="442">22</text><text x="290" y="492">23</text>
+        <text x="290" y="542">24</text><text x="290" y="592">25</text><text x="290" y="642">26</text>
+        <text x="290" y="692">27</text><text x="290" y="742">28</text><text x="290" y="792">29</text>
+      </g>
+      <text x="360" y="242" fill="#D6A9E8">const</text>
+      <text x="458" y="242" fill="#DDE8DD"> rover</text>
+      <text x="568" y="242" fill="#7CCDE0"> =</text>
+      <text x="620" y="242" fill="#E5C47B"> new</text>
+      <text x="720" y="242" fill="#8FD8AF"> Robot</text>
+      <text x="845" y="242" fill="#DDE8DD">({</text>
+
+      <text x="410" y="292" fill="#87C8E1">motors</text>
+      <text x="530" y="292" fill="#DDE8DD">:</text>
+      <text x="560" y="292" fill="#D6A9E8"> await</text>
+      <text x="685" y="292" fill="#8FD8AF"> connect</text>
+      <text x="850" y="292" fill="#DDE8DD">("drive"),</text>
+
+      <text x="410" y="342" fill="#87C8E1">sensors</text>
+      <text x="550" y="342" fill="#DDE8DD">:</text>
+      <text x="580" y="342" fill="#E6C780"> [</text>
+      <text x="620" y="342" fill="#82D3A7"> "vision"</text>
+      <text x="770" y="342" fill="#DDE8DD">,</text>
+      <text x="800" y="342" fill="#82D3A7"> "touch"</text>
+      <text x="945" y="342" fill="#E6C780">],</text>
+
+      <text x="410" y="392" fill="#87C8E1">mode</text>
+      <text x="505" y="392" fill="#DDE8DD">:</text>
+      <text x="535" y="392" fill="#82D3A7"> "explore"</text>
+      <text x="725" y="392" fill="#DDE8DD">,</text>
+
+      <text x="360" y="442" fill="#DDE8DD">});</text>
+
+      <text x="360" y="542" fill="#D6A9E8">async function</text>
+      <text x="605" y="542" fill="#8FD8AF"> navigate</text>
+      <text x="780" y="542" fill="#DDE8DD">(target) {</text>
+
+      <text x="410" y="592" fill="#D6A9E8">const</text>
+      <text x="510" y="592" fill="#DDE8DD"> path</text>
+      <text x="605" y="592" fill="#7CCDE0"> =</text>
+      <text x="650" y="592" fill="#D6A9E8"> await</text>
+      <text x="765" y="592" fill="#8FD8AF"> map</text>
+      <text x="845" y="592" fill="#DDE8DD">(target);</text>
+
+      <text x="410" y="642" fill="#D6A9E8">for</text>
+      <text x="465" y="642" fill="#DDE8DD"> (</text>
+      <text x="500" y="642" fill="#D6A9E8">const</text>
+      <text x="600" y="642" fill="#DDE8DD"> step</text>
+      <text x="695" y="642" fill="#D6A9E8"> of</text>
+      <text x="745" y="642" fill="#DDE8DD"> path) {</text>
+
+      <text x="460" y="692" fill="#D6A9E8">await</text>
+      <text x="555" y="692" fill="#DDE8DD"> rover</text>
+      <text x="655" y="692" fill="#7CCDE0">.</text>
+      <text x="675" y="692" fill="#8FD8AF"> moveTo</text>
+      <text x="810" y="692" fill="#DDE8DD">(step);</text>
+      <text x="410" y="742" fill="#DDE8DD">}</text>
+      <text x="360" y="792" fill="#DDE8DD">}</text>
+    </g>
+    <rect x="1100" y="215" width="430" height="500" rx="12" fill="url(#glow)"/>
+    <path d="M1210 275H1460M1210 315H1380M1210 355H1490M1210 395H1425M1210 435H1465M1210 475H1370M1210 515H1495M1210 555H1420M1210 595H1470M1210 635H1390" stroke="url(#code)" stroke-opacity=".4" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="1330" cy="530" r="120" stroke="#78D9B3" stroke-opacity=".14" stroke-width="2"/>
+    <circle cx="1330" cy="530" r="167" stroke="#78D9B3" stroke-opacity=".08" stroke-width="2"/>
+  </g>
+  <rect width="1600" height="900" fill="url(#glow)" opacity=".34"/>
+</svg>

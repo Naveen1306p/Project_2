@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" fill="none">
+  <defs>
+    <linearGradient id="head" x1="152" y1="110" x2="340" y2="285" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8F4D6"/>
+      <stop offset=".55" stop-color="#8DCBA5"/>
+      <stop offset="1" stop-color="#4F967A"/>
+    </linearGradient>
+    <linearGradient id="side" x1="336" y1="142" x2="372" y2="268" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#68A887"/>
+      <stop offset="1" stop-color="#326C5E"/>
+    </linearGradient>
+    <linearGradient id="body" x1="170" y1="278" x2="324" y2="394" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7CC7A2"/>
+      <stop offset="1" stop-color="#3D826F"/>
+    </linearGradient>
+    <linearGradient id="laptop" x1="151" y1="352" x2="340" y2="451" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D58E"/>
+      <stop offset="1" stop-color="#C99350"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="176" y1="352" x2="326" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#243B48"/>
+      <stop offset="1" stop-color="#14252F"/>
+    </linearGradient>
+    <filter id="shadow" x="30" y="24" width="420" height="450" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <ellipse cx="244" cy="438" rx="151" ry="24" fill="#18372D" fill-opacity=".16" filter="url(#shadow)"/>
+  <path d="M239 83V51" stroke="#477E6C" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="239" cy="43" r="15" fill="#F2C76E"/>
+  <circle cx="239" cy="43" r="7" fill="#FFF2BC"/>
+
+  <path d="M331 140 365 157V240L336 265 331 140Z" fill="url(#side)"/>
+  <rect x="125" y="104" width="220" height="177" rx="61" fill="url(#head)" stroke="#E8F7DD" stroke-width="7"/>
+  <rect x="157" y="143" width="158" height="105" rx="37" fill="#18333B"/>
+  <path d="M201 193C201 183 208 176 217 176S233 183 233 193" stroke="#B6F28F" stroke-width="12" stroke-linecap="round"/>
+  <path d="M250 193C250 183 257 176 266 176S282 183 282 193" stroke="#B6F28F" stroke-width="12" stroke-linecap="round"/>
+  <path d="M216 218C226 228 245 231 259 220" stroke="#D3F5C8" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="235" cy="211" r="3" fill="#FFF3C7"/>
+  <path d="M122 171H106V214H123" stroke="#69A686" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M346 171H362V214H345" stroke="#4A8B74" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="111" cy="191" r="7" fill="#F3C96F"/>
+  <circle cx="357" cy="191" r="7" fill="#F3C96F"/>
+
+  <rect x="212" y="271" width="55" height="27" rx="12" fill="#5D9C7D"/>
+  <path d="M177 300C177 286 188 276 202 276H278C292 276 303 286 303 300V368H177V300Z" fill="url(#body)" stroke="#D4F0D1" stroke-width="6"/>
+  <circle cx="239" cy="320" r="18" fill="#E8F1D2"/>
+  <path d="M231 321H247M239 313V329" stroke="#548B70" stroke-width="5" stroke-linecap="round"/>
+
+  <path d="M185 309C167 316 157 329 149 346L170 362 199 337" fill="#74B992" stroke="#D4F0D1" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M294 309C313 318 324 331 333 348L310 364 282 338" fill="#4F977D" stroke="#D4F0D1" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="161" cy="353" r="15" fill="#E9C36F"/>
+  <circle cx="320" cy="354" r="15" fill="#E9C36F"/>
+  <path d="M155 353H167M314 354H326" stroke="#9D713D" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M162 345H318C326 345 332 351 332 359V421H148V359C148 351 154 345 162 345Z" fill="url(#screen)" stroke="#F7E3B2" stroke-width="7"/>
+  <path d="M177 372H196L205 382 196 392H177M218 394H263" stroke="#91DDAE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M192 406H239" stroke="#76C9E2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M133 421H347L326 448H154L133 421Z" fill="url(#laptop)" stroke="#F8E8C4" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M214 430H266" stroke="#A9753E" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="119" cy="91" r="6" fill="#EDB862"/>
+  <path d="M373 289 382 306 401 309 387 322 390 341 373 332 356 341 359 322 345 309 364 306 373 289Z" fill="#F2C76E"/>
+  <text x="89" y="286" fill="#51866F" font-family="Consolas, monospace" font-size="25" font-weight="700">&lt;/&gt;</text>
+</svg>
