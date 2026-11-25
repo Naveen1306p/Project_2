@@ -318,6 +318,24 @@ h1,
   text-transform: none;
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.repository-link {
+  color: #66836f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.repository-link:hover,
+.repository-link:focus-visible {
+  color: #3f6450;
+  text-decoration: underline;
+}
+
 .footer-lock {
   margin-left: 4px;
   color: #66836f;
